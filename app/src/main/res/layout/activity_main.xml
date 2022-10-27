@@ -27,20 +27,85 @@
         android:background="@color/white"
         android:gravity="center"
         android:singleLine="true"
-        android:text="Distância"
+        android:text="Distância (km)"
+        android:textColor="@color/black"
+        android:textSize="40sp" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txt_distancia_input"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:text="5KM"
+        android:textColor="@color/black"
+        android:textSize="40dp"
+        android:gravity="center"
+        android:layout_marginEnd="10dp"
+        android:ellipsize="start"
+        android:singleLine="true"/>
+
+    <TextView
+        android:id="@+id/txt_tempo"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="Tempo"
         android:textColor="@color/black"
         android:textSize="40sp" />
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:orientation="vertical">
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/txt_titulo_horas"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:background="@color/white"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="hh"
+            android:textColor="@color/black"
+            android:textSize="40sp" />
+
+        <TextView
+            android:id="@+id/txt_titulo_minutos"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:background="@color/white"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="mm"
+            android:textColor="@color/black"
+            android:textSize="40sp" />
+
+        <TextView
+            android:id="@+id/txt_titulo_segundos"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:background="@color/white"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="ss"
+            android:textColor="@color/black"
+            android:textSize="40sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
 
         <TextView
             android:id="@+id/txt_horas"
             android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:layout_weight="0"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
             android:background="@color/white"
             android:gravity="center"
             android:singleLine="true"
@@ -51,8 +116,8 @@
         <TextView
             android:id="@+id/txt_minutos"
             android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:layout_weight="0"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
             android:background="@color/white"
             android:gravity="center"
             android:singleLine="true"
@@ -62,19 +127,79 @@
         <TextView
             android:id="@+id/txt_segundos"
             android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:layout_weight="0"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
             android:background="@color/white"
             android:gravity="center"
             android:singleLine="true"
             android:text="00"
             android:textColor="@color/black"
             android:textSize="40sp" />
-
-
     </LinearLayout>
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal">
 
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/bt_calcular"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:text="Calcular"
+            android:gravity="center"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textSize="40sp"
+            android:background="@color/orange"/>
 
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="340dp"
+        android:layout_height="300dp"
+        android:backgroundTint="@color/green"
+        android:background="@color/green"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_margin="0.1dp"
+        >
+
+        <TextView
+            android:id="@+id/text_result_distancia"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="Distância: 5km"
+            android:textColor="@color/black"
+            android:textSize="30sp"/>
+
+        <TextView
+            android:id="@+id/text_result_tempo"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="Tempo 0h 15m 00s"
+            android:textColor="@color/black"
+            android:textSize="30sp"/>
+
+        <TextView
+            android:id="@+id/text_result_velocidade"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="Velocidade média: 20 Km/h"
+            android:textColor="@color/black"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/text_result_pace"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="Pace: 3.0 min/km"
+            android:textColor="@color/black"
+            android:textSize="30sp"/>
+        </LinearLayout>
 
 </LinearLayout>
