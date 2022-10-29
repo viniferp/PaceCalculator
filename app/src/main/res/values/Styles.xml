@@ -12,6 +12,11 @@
         <item name="backgroundTint">@color/orange</item>
         <item name="android:textColor">@color/black</item>
     </style>
+    s
+    <style name="Calcular_Button">
+        <item name="android:background">@drawable/btn_calcular_clicado</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
     
     
 </resources>

@@ -8,7 +8,7 @@
     android:background="@color/gray"
     tools:context=".MainActivity">
 
-    <TextView
+    <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/txt_titulo"
         android:layout_width="match_parent"
         android:layout_height="80dp"
@@ -20,7 +20,7 @@
         android:singleLine="true"
     />
 
-    <TextView
+    <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/txt_distancia"
         android:layout_width="match_parent"
         android:layout_height="50dp"
@@ -43,7 +43,7 @@
         android:ellipsize="start"
         android:singleLine="true"/>
 
-    <TextView
+    <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/txt_tempo"
         android:layout_width="match_parent"
         android:layout_height="50dp"
@@ -59,7 +59,7 @@
         android:layout_height="50dp"
         android:orientation="horizontal">
 
-        <TextView
+        <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/txt_titulo_horas"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -71,7 +71,7 @@
             android:textColor="@color/black"
             android:textSize="40sp" />
 
-        <TextView
+        <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/txt_titulo_minutos"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -101,7 +101,7 @@
         android:layout_height="50dp"
         android:orientation="horizontal">
 
-        <TextView
+        <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/txt_horas"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -113,7 +113,7 @@
             android:textColor="@color/black"
             android:textSize="40sp" />
 
-        <TextView
+        <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/txt_minutos"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -124,7 +124,7 @@
             android:text="00"
             android:textColor="@color/black"
             android:textSize="40sp" />
-        <TextView
+        <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/txt_segundos"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -149,13 +149,14 @@
             android:layout_weight="3"
             android:text="Calcular"
             android:gravity="center"
+            style="@style/Calcular_Button"
             android:singleLine="true"
-            android:textColor="@color/black"
-            android:textSize="40sp"
-            android:background="@color/orange"/>
+            android:textSize="40sp"/>
 
     </LinearLayout>
+
     <LinearLayout
+        android:id="@+id/txt_resultado"
         android:layout_width="340dp"
         android:layout_height="300dp"
         android:backgroundTint="@color/green"
@@ -165,7 +166,7 @@
         android:layout_margin="0.1dp"
         >
 
-        <TextView
+        <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/text_result_distancia"
             android:layout_width="match_parent"
             android:layout_height="0dp"
@@ -174,7 +175,7 @@
             android:textColor="@color/black"
             android:textSize="30sp"/>
 
-        <TextView
+        <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/text_result_tempo"
             android:layout_width="match_parent"
             android:layout_height="0dp"
@@ -183,7 +184,7 @@
             android:textColor="@color/black"
             android:textSize="30sp"/>
 
-        <TextView
+        <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/text_result_velocidade"
             android:layout_width="match_parent"
             android:layout_height="0dp"
@@ -192,7 +193,7 @@
             android:textColor="@color/black"
             android:textSize="30sp" />
 
-        <TextView
+        <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/text_result_pace"
             android:layout_width="match_parent"
             android:layout_height="0dp"
